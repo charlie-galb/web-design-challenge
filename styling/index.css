@@ -9,90 +9,94 @@ body { margin:0; }
     padding-bottom: 10px;
 }
 
-.upper-grid-container {
+.grid-container {
     width: 800px;
     height: 300px;
-    margin-left: auto;
-    margin-right: auto;
     display: grid;
-    grid-template-columns: 192.5px 192.5px 192.5px 192.5px;
-    grid-template-rows: 50px 50px 50px 50px 50px;
     column-gap: 10px;
     row-gap: 10px;
 }
 
-.grid1-item1 {
+#upper-grid-container {
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 192.5px 192.5px 192.5px 192.5px;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+}
+
+.upper-grid-item {
     background-color: black;
+}
+
+#upper-grid-item1 {
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 2;
 }
 
-.grid1-item2 {
-    background-color: black;
+#upper-grid-item2 {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 7;
 }
 
-.grid1-item3 {
-    background-color: black;
+#upper-grid-item3 {
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 7;
 }
 
-.lower-grid-container {
-    width: 800px;
-    height: 500px;
+#lower-grid-container {
     padding-top:20px;
     margin: auto;
-    display: grid;
     grid-template-columns: 260px 260px 260px;
     grid-template-rows: 50px 50px 50px 50px 50px 50px 50px;
-    column-gap: 10px;
-    row-gap: 10px;
 }
 
-.grid2-item1 {
+.lower-grid-item {
     background-color: grey;
+}
+
+#lower-grid-item1 {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
 }
 
-.grid2-item2 {
-    background-color: grey;
+#lower-grid-item2 {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 4;
 }
 
-.grid2-item3 {
-    background-color: grey;
+#lower-grid-item3 {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 4;
     grid-row-end: 8;
 }
 
-.grid2-item4 {
-    background-color: grey;
+#lower-grid-item4 {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 8;
 }
 
-.grid2-item5 {
-    background-color: grey;
+#lower-grid-item5 {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 4;
     grid-row-end: 8;
 }
+
+@media only screen 
+  and (min-device-width: 350px) 
+  and (max-device-width: 820px) {
+
+  }
