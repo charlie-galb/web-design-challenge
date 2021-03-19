@@ -3,19 +3,18 @@ body { margin:0; }
 .light-grey-rectangle {
     background-color:rgb(208,208,208);
     width: 100%;
-    height: 300px;
     margin: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    justify-content: center;
 }
 
 .grid-container {
     width: 800px;
-    height: 300px;
     display: grid;
     margin: auto;
     column-gap: 10px;
     row-gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #upper-grid-container {
@@ -97,78 +96,51 @@ body { margin:0; }
   and (min-width: 380px) 
   and (max-width: 820px) {
 
-    .light-grey-rectangle {
-        height: 550px;
-    }
-
     .grid-container {
         width: 80%;
+        display: flex;      
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
-    #upper-grid-container {
-        grid-template-columns: 80%;
-        grid-template-rows: 50px 240px 240px;
+    .upper-grid-item {
+        width: 80%;
+    }
+
+    .lower-grid-item {
+        width: 80%;
     }
 
     #upper-grid-item1 {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
+        height: 50px;
     }
     
     #upper-grid-item2 {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 3;
+        height: 200px;
     }
     
     #upper-grid-item3 {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 3;
-        grid-row-end: 4;
-    }
-
-    #lower-grid-container {
-        grid-template-columns: 80%;
-        grid-template-rows: 50px 110px 230px 230px 230px;
+        height: 200px;
     }
     
     #lower-grid-item1 {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
+        height: 50px;
     }
     
     #lower-grid-item2 {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 3;
+        height: 100px;
     }
     
     #lower-grid-item3 {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 3;
-        grid-row-end: 4;
+        height: 200px;
     }
     
     #lower-grid-item4 {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 4;
-        grid-row-end: 5;
+        height: 200px;
     }
     
     #lower-grid-item5 {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 5;
-        grid-row-end: 6;
+        height: 200px;
     }
   }
