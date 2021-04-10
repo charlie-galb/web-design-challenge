@@ -9,20 +9,39 @@ body { margin:0; }
     width: 100%;
 }
 
-.grid-container {
+.lower-grid-container, .upper-grid-container {
     margin: auto;
     width: 80%;
     display: flex;      
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.upper-grid-item {
+.upper-grid-item1, .upper-grid-item2, .upper-grid-item3 {
     background-color: black;
-    width: 80%;
     margin: 10px;
+}
+
+.upper-grid-item1 {
+    width: calc(80% + 20px);
+    height: 60px;
+}
+
+.upper-grid-item2, .upper-grid-item3 {
+    height: 240px;
+    width: 40%;
+}
+
+.upper-grid-item2 {
+    margin-left: 0px;
+}
+
+.upper-grid-item3 {
+    margin-right: 0px;
 }
 
 .lower-grid-item {
@@ -31,32 +50,7 @@ body { margin:0; }
     margin: 10px;
 }
 
-.sub-container {
-    width: 80%;
-    display: flex;      
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-#upper-grid-item1 {
-    width: 80%;
-    height: 60px;
-}
-
-#upper-grid-item2 {
-    height: 240px;
-    width: 50%;
-    margin-left: 0px;
-}
-
-#upper-grid-item3 {
-    height: 240px;
-    width: 50%;
-    margin-right: 0px;
-}
-
-#lower-grid-container {
+.lower-grid-container {
     padding-top:20px;
 }
 
@@ -89,17 +83,21 @@ body { margin:0; }
   and (min-width: 380px) 
   and (max-width: 820px) {
 
-    .sub-container {
+    .upper-grid-container {
         width: 80%;     
         flex-direction: column;
     }
 
-    #upper-grid-item2 {
+    .upper-grid-item1 {
+        width: 100%;
+    }
+
+    .upper-grid-item2 {
         width: 100%;
         margin-left: 10px;
     }
     
-    #upper-grid-item3 {
+    .upper-grid-item3 {
         width: 100%;
         margin-right: 10px;
     }
