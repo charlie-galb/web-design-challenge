@@ -9,7 +9,7 @@ body { margin:0; }
     width: 100%;
 }
 
-.lower-grid-container, .upper-grid-container {
+.grid-container {
     margin: auto;
     width: 80%;
     display: flex;      
@@ -36,7 +36,7 @@ body { margin:0; }
     width: calc(40% - 10px);
 }
 
-.lower-grid-container {
+.lower {
     padding-top:20px;
 }
 
@@ -63,8 +63,30 @@ body { margin:0; }
 }
 
 @media only screen 
-  and (min-width: 200px) 
+  and (min-width: 700px) 
   and (max-width: 1000px) {
+
+    .grid-container {
+        width: 85%;
+    }
+
+    .upper-grid-panel {
+        width: calc(40% - 10px)
+    }
+
+    .lower-grid-panel {
+        width: calc(40% - 10px)
+    }
+    
+  }
+
+@media only screen 
+  and (min-width: 200px) 
+  and (max-width: 700px) {
+
+    .grid-container {
+        width: 95%;
+    }
 
     .upper-grid-panel {
         width: 80%;
